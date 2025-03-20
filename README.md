@@ -2,11 +2,18 @@
 
 CloudTrailログからeventSourceとeventNameを抽出するスクリプトです。
 
+# 環境
+- python: 3.13
+
 ## ファイル説明
 
-- `lambda_extractor.py` - Lambda関数用スクリプト
-- `cloudtrail_analyzer.py` - ローカル環境用スクリプト
-- `lambda_policy.json` - Lambda実行用IAMポリシー
+- Lambda
+  - `lambda_extractor.py` - Lambda関数用スクリプト
+  - `lambda_policy.json` - Lambda実行用IAMポリシー
+- ローカルで動かすスクリプト
+  - `cloudtrail_analyzer.py` - ローカル環境用スクリプト
+  - `cloudtrail_events_bydate.py` - ローカル環境用スクリプト（日付範囲指定）
+
 
 ## 使用方法
 
