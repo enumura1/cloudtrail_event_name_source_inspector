@@ -55,10 +55,6 @@ def main():
         print("エラー: 開始日が終了日より後になっています")
         sys.exit(1)
     
-    if end_time > datetime.datetime.now():
-        end_time = datetime.datetime.now()
-        print(f"警告: 終了日が未来に設定されていたため、現在時刻に調整しました")
-    
     # 固定パラメータ
     chunk_days = 10  # 10日ごとに分割処理
     api_sleep_time = 0.5  # APIリクエスト間の待機時間（秒）
